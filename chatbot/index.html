@@ -1,0 +1,147 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Hospital Inteligente e Sustentável</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <div class="marca">
+    <span class="icone">✚</span>
+
+    <div>
+      <small>CITIZEN ASSIST AI</small>
+      <h1>Hospital Inteligente e Sustentável</h1>
+    </div>
+  </div>
+
+  <span class="status">● Assistente de energia</span>
+</header>
+
+<main>
+
+  <section class="intro">
+    <small>GESTÃO DE ENERGIA</small>
+
+    <h2>
+      Consumo mais consciente começa com informação.
+    </h2>
+
+    <p>
+      Consulte estimativas de consumo da iluminação,
+      economia com LED e pré-dimensionamento solar.
+    </p>
+  </section>
+
+  <section class="cards">
+
+    <article>
+      <span>Consumo convencional</span>
+      <strong id="conv">--</strong>
+      <small>kWh/mês</small>
+    </article>
+
+    <article>
+      <span>Consumo LED</span>
+      <strong id="led">--</strong>
+      <small>kWh/mês</small>
+    </article>
+
+    <article class="verde">
+      <span>Economia de energia</span>
+      <strong id="eco">--</strong>
+      <small id="percentual">--</small>
+    </article>
+
+    <article>
+      <span>Economia financeira</span>
+      <strong id="reais">--</strong>
+      <small>por mês, estimada</small>
+    </article>
+
+  </section>
+
+  <section class="layout">
+
+    <div class="painel">
+
+      <small>ASSISTENTE VIRTUAL</small>
+
+      <h2>Como posso ajudar?</h2>
+
+      <div id="mensagens" aria-live="polite" class="mensagens">
+        <p class="bot">
+          Olá! Pergunte sobre consumo convencional,
+          LED, economia, custos ou energia solar.
+        </p>
+      </div>
+
+      <form id="form">
+
+        <input
+          id="pergunta"
+          placeholder="Ex.: Quanto economizamos com LED?"
+          required
+        >
+
+        <button type="submit">Enviar</button>
+
+      </form>
+
+      <div class="atalhos">
+
+        <button type="button" data-q="Qual é o consumo convencional?">
+          Consumo convencional
+        </button>
+
+        <button type="button" data-q="Quanto economizamos com LED?">
+          Economia com LED
+        </button>
+
+        <button type="button" data-q="Quantos painéis solares?">
+          Energia solar
+        </button>
+
+      </div>
+
+    </div>
+
+    <aside class="painel">
+
+      <small>PREMISSAS DO ESTUDO</small>
+
+      <h2>Dados considerados</h2>
+
+      <p>1.500 lâmpadas</p>
+      <p>24 horas por dia</p>
+      <p>30 dias por mês</p>
+      <p>Convencional: 40 W</p>
+      <p>LED: 18 W</p>
+      <p>Tarifa: R$ 0,7894/kWh</p>
+
+      <p class="aviso">
+        Valores estimados. A tarifa e os dados solares
+        devem ser validados para o hospital real.
+      </p>
+
+    </aside>
+
+  </section>
+
+  <footer>
+    Projeto acadêmico FIAP – Citizen Assist AI
+  </footer>
+
+</main>
+
+<script type="module" src="script.js"></script>
+
+</body>
+</html>

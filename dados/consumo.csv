@@ -1,0 +1,19 @@
+indicador,valor,unidade,observacao
+quantidade_lampadas,1500,unidades,Premissa do estudo
+horas_por_dia,24,horas,Premissa do estudo
+dias_por_mes,30,dias,Mes de referencia
+horas_por_mes,720,horas,24 x 30
+potencia_convencional,40,W,Premissa do estudo
+potencia_led,18,W,Premissa do estudo
+tarifa_kwh,0.7894,BRL_por_kWh,Valor de referencia do estudo
+consumo_convencional,43200,kWh_por_mes,Calculado
+consumo_led,19440,kWh_por_mes,Calculado
+economia_energia,23760,kWh_por_mes,Calculado
+economia_percentual,55,porcento,Calculado
+custo_convencional,34102.08,BRL_por_mes,Calculado
+custo_led,15345.94,BRL_por_mes,Calculado
+economia_financeira,18756.14,BRL_por_mes,Calculado
+economia_anual,225073.73,BRL_por_ano,Calculado
+potencia_painel,550,W,Hipotese de modulo
+geracao_por_kwp_mes,100.2,kWh_por_kWp_mes,Hipotese preliminar a validar
+quantidade_paineis_solares,353,unidades,Estimativa preliminar arredondada para cima
