@@ -1,8 +1,8 @@
-
 import http from "node:http";
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { exec } from "node:child_process";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const PORTA = 8000;
@@ -79,8 +79,8 @@ const servidor = http.createServer(async (req, res) => {
   let caminho = decodeURIComponent(url.pathname);
 
   if (caminho === "/" || caminho === "/chatbot/") {
-  caminho = "/chatbot/index.html";
-}
+    caminho = "/chatbot/index.html";
+  }
 
   const arquivo = path.resolve(__dirname, "." + caminho);
 
@@ -108,5 +108,7 @@ const servidor = http.createServer(async (req, res) => {
 });
 
 servidor.listen(PORTA, () => {
-  console.log(`Servidor iniciado em http://localhost:${PORTA}/chatbot/`);
+  const url = `http://localhost:${PORTA}/chatbot/`;
+  console.log(`Servidor iniciado em ${url}`);
+  exec(`start "" "${url}"`);
 });
