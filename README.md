@@ -234,15 +234,6 @@ npm test
 ```bash
 npm run start
 ```
-
-**6. Acessar o chatbot**
-
-Abra o navegador no endereço:
-
-http://localhost:8000/chatbot/
-
-O servidor deve permanecer em execução enquanto o site estiver sendo utilizado.
-
 ## 9. Testes e validação
 
 ### 9.1 Testes automatizados
